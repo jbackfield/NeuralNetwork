@@ -36,7 +36,7 @@ class Midterm() extends ActionListener {
   /** Field for the learning rate */
   val etaField = new JTextField("0.1")
   /** Field for the csv file to read from for input data */
-  val fileField = new JTextField("/Users/jbackfield/iris.csv")
+  val fileField = new JTextField("/path/to/csv")
   /** Field for the number of perceptrons in the hidden layer */
   val hiddenlayerField = new JTextField("10")
   /** Windows frame */
@@ -133,7 +133,7 @@ class Midterm() extends ActionListener {
         Midterm.test(nn, in)
         val epoch_res = Midterm.epochTest(nn, in, error_margin)
         nn.updateEpochs()
-        if((epoch_res._2 / in.length) == 1 || nn.epochs >= max_epochs) {
+        if(epoch_res._2 == 1 || nn.epochs >= max_epochs) {
           cont = false
         }
         println(nn.toString())

@@ -1,0 +1,6 @@
+This was a project I had to write for class; it's pretty cool so I figured I'd put it out here for giggles.
+
+Scala Documentation can be found here
+http://open-iris.com/neuralnetwork/
+
+I have absolutely no tests; and frankly there are only a few example csv (input.csv and iris.csv) files.  But, if you point the application towards the file(s) then you will see it work.
